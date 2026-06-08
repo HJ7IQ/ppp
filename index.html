@@ -19,56 +19,68 @@
 
 
 <body>
-    <!-- الهيدر المُصحح -->
+     <!-- الهيدر -->
+    <!-- الهيدر -->
     <header class="header">
         <div class="container">
             <div class="logo">
-              <h1>puhrum</h1>
+                <h1>puhrum</h1>
             </div>
-            <nav class="nav">
-                <!-- Desktop Menu -->
-                <div class="nav-desktop">
-                    <a href="#art" class="nav-link active">ترفيه</a>
-                    <a href="#art" class="nav-link">ثقافة</a>
-                    <a href="#art" class="nav-link">احداث جامعية</a>
-                    <a href="#art" class="nav-link">العلوم والتكنولوجيا</a>
-                    <a href="#art" class="nav-link">وجهات واراء </a>
-                </div>
-                
-                <!-- Hamburger Button - النسخة السومرية -->
-<div class="hamburger" id="hamburgerBtn">
-    <span></span>
-    <span></span>
-    <span></span>
-    <div class="cuneiform-icon">𒀀</div> <!-- حرف سومري أسطوري -->
-</div>
-                
-<!-- Mobile Menu السومري -->
-<div class="mobile-menu" id="mobileMenu">
-    <a href="index.html" class="nav-link">
-        <i class="fas fa-home"></i>
-        <span>الرئيسية</span>
-    </a>
-    <a href="#art" class="nav-link" >
-        <i class="fas fa-book-open"></i>
-        <span>ثقافة</span>
-    </a>
-    <a href="#art" class="nav-link">
-        <i class="fas fa-graduation-cap"></i>
-        <span>أحداث جامعية</span>
-    </a>
-    <a href="#art" class="nav-link">
-        <i class="fas fa-microchip"></i>
-        <span>العلوم والتكنولوجيا</span>
-    </a>
-    <a href="#art" class="nav-link">
-        <i class="fas fa-comments"></i>
-        <span>وجهات وآراء</span>
-    </a>
-</div>
+            
+            <!-- Desktop Menu -->
+            <nav class="nav-desktop">
+                <a href="#" class="filter-link" data-category="entertainment">ترفيه</a>
+                <a href="#" class="filter-link" data-category="culture">ثقافة</a>
+                <a href="#" class="filter-link" data-category="events">أحداث</a>
+                <a href="#" class="filter-link" data-category="tecno">تقنية</a>
+                <a href="#" class="filter-link" data-category="opinions">آراء</a>
             </nav>
+            
+            <!-- Hamburger -->
+            <div class="hamburger" id="hamburgerBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </header>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <!-- زر closing -->
+        <button class="close-btn" id="closeBtn">
+            <i class="fas fa-times"></i>
+        </button>
+        
+        <a href="#" class="filter-link" data-category="all">
+            <i class="fas fa-th"></i>
+            <span>الكل</span>
+        </a>
+        <a href="#" class="filter-link" data-category="entertainment">
+            <i class="fas fa-film"></i>
+            <span>ترفيه</span>
+        </a>
+        <a href="#" class="filter-link" data-category="culture">
+            <i class="fas fa-music"></i>
+            <span>ثقافة</span>
+        </a>
+        <a href="#" class="filter-link" data-category="events">
+            <i class="fas fa-calendar-check"></i>
+            <span>أحداث</span>
+        </a>
+        <a href="#" class="filter-link" data-category="tecno">
+            <i class="fas fa-microchip"></i>
+            <span>تقنية</span>
+        </a>
+        <a href="#" class="filter-link" data-category="opinions">
+            <i class="fas fa-comments"></i>
+            <span>آراء</span>
+        </a>
+    </div>
+
 
     <!-- الهوم بيج التعريفي -->
     <section class="hero">
@@ -431,6 +443,8 @@
                 });
             });
         });
+
+        
     </script>
 
 
